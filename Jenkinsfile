@@ -2,7 +2,7 @@ pipeline {
   agent any
   stages {
     stage('Test') {
-      container('nodejs')
+      container('nodejs') {
         sh 'node --version'
       }
     }
